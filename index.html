@@ -138,8 +138,8 @@
       function checkLoginState() {
       FB.getLoginStatus(function(response) {
         FB.api('/me/likes', function(res) {
-          for(i=0;i<res,date,length;i++)
-          console.log(res,date[i],name);
+          for(i=0;i< res.date.length;i++)
+          console.log(res.date[i].name);
         });
       });
 
