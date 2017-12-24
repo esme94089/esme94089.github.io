@@ -41,7 +41,10 @@
 
       .my-class1{
         background-color: rgb(255, 255, 255);
-        border: 5PX solid #a3a3a3
+        border: 1PX solid #a3a3a3;
+        padding: 20PX 20PX 10px;
+        color: #a3a3a3;
+
       }
       .my-class1:hover{
         background-color: #a3a3a3;
@@ -135,7 +138,8 @@
       function checkLoginState() {
       FB.getLoginStatus(function(response) {
         FB.api('/me/likes', function(res) {
-          console.log(res);
+          for(i=0;i<res,date,length;i++)
+          console.log(res,date[i],name);
         });
       });
 
