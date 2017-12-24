@@ -1,0 +1,21 @@
+body{
+  background-color: #a1bfb2
+}
+  @media screen and (max-width:500PX){
+    body{
+      background-color: rgb(208, 100, 100)
+    }
+  }
+  @media screen and (max-width:400PX){
+    body{
+      background-color: rgb(221, 158, 52)
+    }
+  }
+  @media screen and (max-width:300PX){
+    body{
+      background-color: rgb(228, 213, 80)
+    }
+  }
+.pink-bg{
+  color: green;
+  font-size: 30PX;}

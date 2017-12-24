@@ -1,23 +1,132 @@
 <html>
   <head>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-    <style>{
-        background-color: rgb(197, 200, 209);
-    }
+    <title>我是頁標</title>
+    <link rel="stylesheet" href="app.css">
+
+    <style>
+      .my-font-bigger{font-size: 50PX;font-weight: bold;}
+
+      .my-font{text-decoration: underline;letter-spacing: 10PX}
+
+      .my-font-2{text-decoration: line-through;word-spacing: 10PX}
+
+      .my-font-3{line-height: 40px}
+
+      .my-class{
+        border: 1PX solid #4e686b;
+        width: 50PX;
+        height: 10PX;
+        margin-top: 200PX;
+        margin-bottom: 200PX;
+        background-color: rgba(116, 159, 180, 0.58);
+        padding: 15PX 10PX 20px;
+      }
+      .box-a{
+        background-color: rgb(124, 133, 166);
+        position: absolute;
+        left: 200px;
+        top:50PX;
+        border: 5PX solid #38443f;
+      }
+      .box-b{
+        background-color: rgb(128, 145, 108);
+        position:absolute;
+        left: 200PX;
+        top:100PX;
+      }
+
+      .my-class1{
+        background-color: rgb(104, 139, 152);
+      }
+      .my-class1:hover{
+        background-color: rgb(135, 131, 162);
+      }
+      li:last-of-type{
+        background-color: rgb(17, 73, 75)
+      }
+
     </style>
+
+
   </head>
   <body>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
 
 
+        <ul>
+          <li>item02</li>
+          <li>item03</li>
+          <li>item04</li>
+        </ul>
 
-    <div class="container">
-      <!-- Content here -->
-      <button type="button" class="btn btn-outline-secondary">網頁</button>
-      <div class="alert alert-light" role="alert">
-        <span class="border border-light">HOLLE!</span>
-      </div>
-    </div>
+
+        <a class="my-class1" href="about.html">aaaaaaaaa</a>
+
+        <div class="box-a">
+          asddd
+        </div>
+        <div class="box-b">
+          aaaaaaaaa
+
+        </div>
+        <h1>主標</h1>
+
+        <h2>次標</h2>
+
+        <b>我是粗體字</b><br>
+
+        <u>我是底線線</u>
+
+        <ol>
+          <li>有編號清單</li>
+          <li>蘋果</li>
+          <li>橘子</li>
+        </ol>
+
+        <ul>
+          <li>無編號清單</li>
+          <li>第二</li>
+          <li>第三</li>
+        </ul>
+
+        <table border="1">
+          <tr>
+            <td>欄位1</td>
+            <td>欄位2</td>
+          </tr>
+          <tr>
+            <td>可以有多個TR</td>
+            <td>可以有多個TD</td>
+          </tr>
+        </table>
+
+        <a href="about.html">超連結</a>
+
+
+        <span style="color: red;background-color:yellow">red</span>
+        <span style="color: green;">green</span>
+        <span style="color: yellow;">yellow</span>
+
+
+        <div class="my-font-bigger">HI</div>
+
+
+        <div class="my-class">555</div>
+
+        <div style="color: rgb(13, 43, 34);">
+          <b>抽獎專區      </b>
+        </div>
+
+
+          <button onclick="iponeX()">
+            <b>點我抽獎</b>
+          </button>
+
+        <script>
+          function iponeX(){
+            alert("恭喜你抽到了ipone X")
+          }
+        </script>
+
+
   </body>
+</html>
