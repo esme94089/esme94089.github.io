@@ -133,6 +133,14 @@
     FB.getLoginStatus(function(response) {
     statusChangeCallback(response);
     });
+    FB.api(
+  '/me/likes',
+  'GET',
+  {},
+  function(response) {
+      // Insert your code here
+  }
+);
     }
 </script>
 
