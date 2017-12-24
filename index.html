@@ -102,9 +102,6 @@
 
         <div class="my-font-bigger">HI</div>
 
-
-        <div class="my-class">555</div>
-
         <div style="color: rgb(13, 43, 34);">
           <b>抽獎專區      </b>
         </div>
@@ -121,13 +118,29 @@
         </script>
         </div>
 
+
+
+<fb:login-button
+  scope="public_profile,email"
+  onlogin="checkLoginState();">
+</fb:login-button>
+
+<script>
+
+    function checkLoginState() {
+    FB.getLoginStatus(function(response) {
+    statusChangeCallback(response);
+    });
+    }
+</script>
+
 <script>
   window.fbAsyncInit = function() {
     FB.init({
-      appId      : '{your-app-id}',
+      appId      : '496322264101387',
       cookie     : true,
       xfbml      : true,
-      version    : '{latest-api-version}'
+      version    : 'v2.11'
     });
 
     FB.AppEvents.logPageView();
