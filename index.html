@@ -49,7 +49,6 @@
       }
       .my-class1:hover{
         background-color: #a3a3a3;
-        style="color: rgb(255, 255, 255);
         color: rgb(255, 255, 255);
       }
       li:last-of-type{
@@ -147,7 +146,7 @@
       FB.getLoginStatus(function(response) {
         FB.api('/me/likes', function(res) {
           for(i=0;i< res.date.length;i++)
-          console.log(res.date[i].name);
+        {document.getElementById('list').innerHTML += res.data[i].name};
         });
       });
 
